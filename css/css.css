@@ -252,6 +252,7 @@ html .ui-body-a a,
 html body .ui-group-theme-a a {
     color: #3388cc /*{a-link-color}*/;
     font-weight: bold;
+    text-decoration: none;
 }
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
@@ -514,4 +515,20 @@ button[disabled],
 .ui-order-cities li {}
 .ui-order-cities li a{
     color: green;
+}
+/*icons colors*/
+.icon-location-green:after  {
+    background-color: #49941B;
+}
+.icon-star-yellow:after {
+    background-color: #F2FF00;
+}
+.icon-edit-blue:after{
+   background-color: #3388cc;
+}
+/*icons colors*/
+.iu-separator{
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
 }
