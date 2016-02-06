@@ -479,6 +479,8 @@ button[disabled],
     text-shadow: none;
     text-align: left;
     font-size: 1.1em;
+    border-bottom: #7D7D7D 1px solid;
+    border-top: #7D7D7D 2px solid;
 }
 .ui-banner .ui-btn-icon-left:after, .ui-btn-icon-right:after {
     top: 7%;
@@ -489,7 +491,8 @@ button[disabled],
     text-align: right;
     background: #ccc;
     padding: 1em 0.5em;
-    border-top: #ccc 1px solid;
+    border-bottom: #7D7D7D 1px solid;
+    border-top: #7D7D7D 2px solid;
 }
 .ui-paginator a{
     color: #000;
