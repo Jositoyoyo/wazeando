@@ -13,7 +13,7 @@
         <script src="js/jquery-1.11.3.min.js"></script>
     </head>
     <body class="ui-mobile-viewport ui-overlay-a">
-        <div class="ui-page ui-page-theme-a ui-page-active">
+        <div class="ui-page ui-page-theme-a ui-page-active" data-role="page" id="one">
             <div id="ui-header" class="ui-header ui-bar-inherit" role="banner" data-role="header" data-position="inline">
                 <a role="button" data-role="button" href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">Back</a>
                 <a role="button" data-role="button" href="#rightpanel3" class="ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all">Menu</a>
@@ -25,22 +25,9 @@
             <div style="margin-bottom: 7px;">
                 <ul data-role="listview" class="ui-listview">
                     <li class="ui-first-child">
-                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Sanas</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Clasicas</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Economicas</a>
+                        <a href="#two" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Filtrar busqueda</a>
                     </li>
                 </ul>
-                <div style="
-                     text-align: center;
-                     text-decoration: none;
-                     margin-top: 6px;
-                     ">
-                    <a href="" class="ui-link">Ver mas</a>
-                </div>
             </div>
             <div class="ui-banner">
                 <div>Locales cercanos</div>          
@@ -83,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" id="r6884911" class="details">
+                    <a href="Reviews.html" id="r6884911" class="details">
                         <div class="thumb">
                             <img src="images/03.jpg" alt="DSTAGE">
                         </div>
@@ -133,4 +120,46 @@
             </ul>
             
         </div>
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="two" data-theme="a">
+
+            <div data-role="header">
+                <h1>filtrar</h1>
+            </div><!-- /header -->
+
+            <div role="main" class="ui-content">
+                <form>
+                    <label for="especialidad">Donde</label>
+                    <select>
+                        <option>Madrid</option>
+                    </select>
+                    <label for="especialidad">Que buscas ?</label>
+                    <select>
+                        <option>Pintxos</option>
+                        <option>Raciones</option>
+                        <option>Montaditos</option>
+                        <option>Clasicos</option>
+                        <option>Gourmet</option>
+                        <option>Internacional</option>
+                    </select>
+                    <fieldset data-role="controlgroup">
+                        <legend>Especialidad</legend>
+                        <input name="checkbox-1a" id="checkbox-1a" checked="" type="checkbox">
+                        <label for="checkbox-1a">Patatas bravas</label>
+                        <input name="checkbox-2a" id="checkbox-2a" type="checkbox">
+                        <label for="checkbox-2a">Calamares</label>
+                        <input name="checkbox-3a" id="checkbox-3a" type="checkbox">
+                        <label for="checkbox-3a">Montaditos</label>
+                        <input name="checkbox-4a" id="checkbox-4a" type="checkbox">
+                        <label for="checkbox-4a">Marisco</label>
+                    </fieldset>
+                </form>
+
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
+        </div>
+        <!-- /page two -->
 </html>
